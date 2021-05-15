@@ -26,7 +26,7 @@ async function changeFiele () {
 async function sendNotify (text,desp) {
   const options ={
     uri:  `https://sctapi.ftqq.com/${serverJ}.send`,
-    form: { title, desp },
+    form: { text, desp },
     json: true,
     method: 'POST'
   }
@@ -35,6 +35,13 @@ async function sendNotify (text,desp) {
   }).catch((err)=>{
     console.log(err)
   })
+}
+
+await rp.post(options).then(res=>{
+console.log(res)
+}).catch((err)=>{
+console.log(err)
+})
 }
 
 async function start() {
