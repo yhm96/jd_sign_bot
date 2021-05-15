@@ -37,12 +37,6 @@ async function sendNotify (text,desp) {
   })
 }
 
-await rp.post(options).then(res=>{
-console.log(res)
-}).catch((err)=>{
-console.log(err)
-})
-}
 
 async function start() {
   if (!KEY) {
