@@ -25,8 +25,8 @@ async function changeFiele () {
 
 async function sendNotify (text,desp) {
   const options ={
-    uri:  `https://sc.ftqq.com/${serverJ}.send`,
-    form: { text, desp },
+    uri: https://sctapi.ftqq.com/${serverJ}.send,
+    form: { title, desp },
     json: true,
     method: 'POST'
   }
